@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box model</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+        .container{
+            height:200px;
+            width:500px;
+            /* margin:30px; */
+            margin-left:10px;
+            margin-top: 30px;
+            padding-left:10px;
+            padding-top:30px;
+            /* shorthand for giving properties on 4 sides*/
+            margin:30px 10px 0px 10px;
+        }
+        .first{
+           background-color: lightblue; 
+        }
+        .second{
+            background-color: lightgreen;
+        }
+        .third{
+            background-color: lightpink;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container first">
+        <h1>this is heading</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere pariatur ex explicabo! Ut laboriosam beatae voluptates aliquid totam omnis esse animi veritatis magnam, eveniet a autem officiis, in suscipit ex doloremque dolore harum exercitationem quos unde corporis, culpa asperiores facere doloribus. Omnis soluta quam animi eaque fugiat tenetur rerum sed.</p>
+    </div>
+    <div class="container second">
+        <h1>this is heading</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere pariatur ex explicabo! Ut laboriosam beatae voluptates aliquid totam omnis esse animi veritatis magnam, eveniet a autem officiis, in suscipit ex doloremque dolore harum exercitationem quos unde corporis, culpa asperiores facere doloribus. Omnis soluta quam animi eaque fugiat tenetur rerum sed.</p>
+    </div>
+    <div class="container third">
+        <h1>this is heading</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere pariatur ex explicabo! Ut laboriosam beatae voluptates aliquid totam omnis esse animi veritatis magnam, eveniet a autem officiis, in suscipit ex doloremque dolore harum exercitationem quos unde corporis, culpa asperiores facere doloribus. Omnis soluta quam animi eaque fugiat tenetur rerum sed.</p>
+    </div>
+    
+</body>
+</html>
