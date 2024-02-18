@@ -14,7 +14,11 @@
         <label>Password</label>
         <input type="password">
         <label>Phone Number</label>
-        <input type="number">
+        <!-- <input type="number"> -->
+        <input type="text" name="phoneNumber" pattern="\d{10}" maxlength="10" title="Enter a 10-digit phone number">
+        <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Please enter a valid email address">
+
+
         <label>Age</label>
         <input type="number" min="1" max="10">
         <label>DOB</label>

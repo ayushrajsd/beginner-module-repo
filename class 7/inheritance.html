@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: Arial;
+      }
+      p {
+        font-family: "Courier New", Courier, monospace;
+        margin: 20px;
+      }
+      .no-specific-margin { margin: unset; font-family: unset;}
+
+      p.special {
+        font-family: inherit;
+      }
+      a {
+        color: red;
+      }
+      .default-color {
+        color: initial;
+      }
+    </style>
+  </head>
+  <body>
+    hello world
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, deleniti.
+    </p>
+    <p class="special">This paragraph inherits Arial font from the body.</p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque nemo
+      dolorum illum fugiat, doloremque incidunt in quam nobis neque cum.
+    </p>
+    <!-- intial property-->
+    <a href="#">This link is red.</a>
+    <a href="#" class="default-color">This link reverts to default color.</a>
+    <!-- unset property -->
+    <p>This paragraph has a 20px margin.</p>
+<p class="no-specific-margin">This paragraph has an unset margin.</p>
+  </body>
+</html>

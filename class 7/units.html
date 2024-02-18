@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Units</title>
+    <style>
+        html{
+            font-size: 22px;
+        }
+      /* Pixels (px) */
+      .px-example {
+        width: 200px;
+        height: 150px;
+        font-size: 16px;
+        background-color: lightblue;
+      }
+      .container {
+        display: flex;
+        width: 400px; /* Full width of the parent/container */
+      }
+
+      .sidebar {
+        width: 100px; /* Takes up 25% of the container's width */
+        background-color: lightcoral;
+        padding: 10%;
+        margin: 10%;
+      }
+
+      .main-content {
+        width: 75%; /* Takes up the remaining 75% of the container's width */
+        background-color: lightgreen;
+      }
+      .em-container {
+        font-size: 20px; /* Base font size for the container */
+      }
+
+      .text {
+        font-size: 0.8em; /* Smaller than the container font size */
+      }
+
+      .box {
+        font-size: 1.5em; /* Larger than the container font size */
+        padding: 1em;
+        border: 1em solid black; /* Border width also relative to the container's font size */
+      }
+      .grandparent {
+        font-size: 16px; /* Base font size */
+      }
+
+      .parent {
+        font-size: 1.5em; /* 150% of 16px = 24px */
+      }
+
+      .child {
+        font-size: 1.5em; /* 150% of 24px (parent's size), not 16px */
+      }
+      .rem-example {
+      margin: 1rem; /* Always equivalent to 16px */
+      background-color: lightgoldenrodyellow;
+    }
+    .viewport-example {
+      width: 50vw;
+      height: 30vh;
+      background-color: lightcoral;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="px-example">Pixel Example</div>
+    <div class="container">
+      <div class="sidebar">Sidebar</div>
+      <div class="main-content">Main Content</div>
+    </div>
+    <div class="em-container">
+      <p class="text">This is a paragraph with standard text.</p>
+      <div class="box">Content inside the box.</div>
+    </div>
+    <div class="grandparent">
+      Grandparent Text
+      <div class="parent">
+        Parent Text
+        <div class="child">Child Text</div>
+      </div>
+    </div>
+    <div class="rem-example">REM Example</div>
+    <div class="viewport-example">Viewport Example</div>
+
+
+  </body>
+</html>
