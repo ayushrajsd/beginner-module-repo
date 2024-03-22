@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF - 8" />
+    <meta http-equiv="X - UA - Compatible" content="IE = edge" />
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="doubleHolder">
+      <button class="double">double</button>
+    </div>
+
+    <script>
+      //    Q Create a button that is destroyed by clicking on it but two new buttons are created in it's place.
+
+      //   Solution:
+
+      // get the doubleHolder section
+      const doubleBtn = document.querySelector(".double");
+      // add an event
+      function cb(e) {
+        // create a new button
+        let btn = document.createElement("button");
+        // set the class of the new button
+        btn.setAttribute("class", "double");
+        btn.addEventListener("click", cb);
+        // set the innerHTML of the new button
+        btn.innerHTML = "first button";
+        // create a new button
+        let btn2 = document.createElement("button");
+        // set the class of the new button
+        btn2.setAttribute("class", "second-button");
+        // set the innerHTML of the new button
+        btn2.innerHTML = "second button";
+        // append the new button to the doubleHolder
+        e.target.parentElement.appendChild(btn);
+        // append the new button to the doubleHolder
+        e.target.parentElement.appendChild(btn2);
+        // remove the clicked button
+        e.target.remove();
+      }
+      doubleBtn.addEventListener("click", cb);
+    </script>
+    <!-- <script>
+      //    Q Create a button that is destroyed by clicking on it but two new buttons are created in it's place.
+
+      //   Solution:
+
+      // get the doubleHolder section
+      const doubleBtn = document.querySelector(".double");
+      // add an event
+      doubleBtn.addEventListener("click", function (e) {
+          // create a new button
+          let btn = document.createElement("button");
+          // set the class of the new button
+          btn.setAttribute("class", "first-button");
+          // set the innerHTML of the new button
+          btn.innerHTML = "first button";
+          // create a new button
+          let btn2 = document.createElement("button");
+          // set the class of the new button
+          btn2.setAttribute("class", "second-button");
+          // set the innerHTML of the new button
+          btn2.innerHTML = "second button";
+          // append the new button to the doubleHolder
+          e.target.parentElement.appendChild(btn);
+          // append the new button to the doubleHolder
+          e.target.parentElement.appendChild(btn2);
+          // remove the clicked button
+          e.target.remove();
+      });
+    </script> -->
+  </body>
+</html>

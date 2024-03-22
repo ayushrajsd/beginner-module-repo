@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: Arial;
+        font-size: 24px;
+      }
+      p {
+        font-family: "Courier New", Courier, monospace;
+        font-size: 12px;
+        color:aqua;
+        margin:20px;
+      }
+      p.special {
+        font-family: inherit;
+        font-size: inherit;
+        color:initial;
+      }
+      .unset{
+        margin:unset;
+        font-family:unset;
+        font-size:unset;
+      }
+      a {
+        color: red;
+      }
+      .default-color {
+        color: initial;
+      }
+    </style>
+  </head>
+  <body>
+    hellow world
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore, et.</p>
+    <p class="special">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe in vitae
+      minus esse reprehenderit amet.
+    </p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <a href="#">This link is red.</a>
+    <a href="#" class="default-color">This link reverts to default color.</a>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, inventore nulla?</p>
+    <p class="unset">Lorem ipsum dolor sit amet.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda, dolorem!</p>
+  </body>
+</html>

@@ -33,3 +33,5 @@ function myFirstFunction(name){
 }
 
 myFirstFunction("ayush")
+
+console.log(typeof Symbol('just me'))

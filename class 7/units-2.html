@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      /* html {
+        font-size: 16px;
+      } */
+      body{
+        font-size: 32px;
+      }
+      .container {
+        display: flex;
+        /* width: 100%;  */
+        /* Full width of the parent/container */
+        width: 400px;
+        border: 1px solid black;
+      }
+      .sidebar {
+        width: 25%;
+        /* Takes up 25% of the container's width */
+        background-color: lightcoral;
+        /* flex-grow: 1; */
+        padding: 10%;
+      }
+
+      .main-content {
+        /* width: 75%;  */
+        flex-grow: 3;
+        /* Takes up the remaining 75% of the container's width */
+        background-color: lightgreen;
+      }
+      .em-container {
+        font-size: 20px; /* Base font size for the container */
+      }
+      .text {
+        font-size: 0.8em; /* Smaller than the container font size */
+      }
+      .box {
+        /* font-size: 1.5em; */
+        /* Larger than the container font size */
+        padding: 1em;
+      }
+      .grandparent {
+        font-size: 16px; /* Base font size */
+      }
+
+      .parent {
+        font-size: 1.5em; /* 150% of 16px = 24px */
+      }
+
+      .child {
+        font-size: 1.5em; /* 150% of 24px (parent's size), not 16px */
+      }
+      .rem-example {
+        margin: 1rem; /* Always equivalent to 16px */
+        background-color: lightgoldenrodyellow;
+        padding:1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">Sidebar</div>
+      <div class="main-content">Main Content</div>
+    </div>
+    <div class="em-container">
+      <p class="text">paragraph with standarf text</p>
+      <div class="box">Content inside box</div>
+    </div>
+    <div class="grandparent">
+      Grandparent Text
+      <div class="parent">
+        Parent Text
+        <div class="child">Child Text</div>
+      </div>
+    </div>
+    <div class="rem-example">REM Example</div>
+  </body>
+</html>
