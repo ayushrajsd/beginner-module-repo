@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Counter App</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      .counter {
+        display: flex;
+        align-items: center;
+      }
+
+      .btn {
+        padding: 10px 15px;
+        font-size: 18px;
+        background-color: #3498db;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        margin:1rem;
+      }
+
+      .btn:hover {
+        background-color: #2980b9;
+      }
+      .btn:disabled{
+        background-color: #ccc;
+        cursor: not-allowed;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="counter">
+      <button class="btn" id="decrement">-</button>
+      <span id="count">0</span>
+      <button class="btn" id="increment">+</button>
+      <button class="btn" id="reset">Reset</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
