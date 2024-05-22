@@ -1,5 +1,5 @@
 import axios from "axios";
-import { useState, useEffect, useContext } from "React";
+import { useState, useEffect, useContext } from "react";
 import Pagination from "./Pagination";
 import MovieCard from "./MovieCard";
 import { WatchListContext } from "../context/WatchListContext";

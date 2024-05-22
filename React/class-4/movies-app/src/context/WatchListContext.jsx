@@ -1,4 +1,4 @@
-import { createContext, useState, useEffect } from "React";
+import { createContext, useState, useEffect } from "react";
 
 const WatchListContext = createContext();
 

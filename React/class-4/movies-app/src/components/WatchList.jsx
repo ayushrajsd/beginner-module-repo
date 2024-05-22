@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useContext } from "React";
+import React, { useEffect, useState, useContext } from "react";
 import genreids from "../constants";
 import { WatchListContext } from "../context/WatchListContext";
 
