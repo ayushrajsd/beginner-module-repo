@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    // Using event delegation for reply and toggle functionality
+    // Using event delegation for reply and functionality
     commentsContainer.addEventListener("click", (e) => {
         if (e.target.className.includes("replyBtn")) {
             const parentComment = e.target.parentElement;
@@ -34,7 +34,6 @@ document.addEventListener("DOMContentLoaded", () => {
         commentElement.innerHTML = `
           <p>${text}</p>
           <button class="replyBtn">Reply</button>
-          <div class="repliesContainer collapsed"></div>
           <textarea class="replyInput" placeholder="Write a reply..."></textarea>
       `;
         commentsContainer.appendChild(commentElement);
